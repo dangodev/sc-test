@@ -5,10 +5,15 @@ import './App.css';
 
 const blue = 'blue';
 const white = 'white';
+const mediaSmall = '600px';
 
 const StyledApp = styled.div`
   background-color: ${white};
   color: ${blue};
+
+  @media (min-width: ${mediaSmall}) {
+    background-color: red;
+  }
 `;
 
 class App extends Component {
